@@ -26,12 +26,39 @@ li {
   list-style: square;
 }
 
+/* BOTÃO */
+.botao{
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.botao{
+  position: absolute;
+  top: 20px;
+  left: 350px;
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  cursor: pointer;
+}
+
+.botao:focus{
+  outline-style: none;
+}
+
 .light-theme {
   --bg: var(--gree);
   --fontColor: var(--black);
+  --btnFontColor: var(--white);
+  --btnBg:var(--black);
 }
 
 .dark-theme {
   --bg: var(--black);
   --fontColor: var(--gree);
+  --btnFontColor: var(--black);
+  --btnBg:var(--white);
 }
